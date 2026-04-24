@@ -1,28 +1,141 @@
+/* Estilos globales para el proyecto se hacen de manera manual ya que tailwind no está instalado */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --dark: #1e2025;
+  --gold: #ffc562;
+  --gray-light: #f4f4f4;
+  --white: #ffffff;
+}
 
-/* ====== ESTILOS GLOBALES ====== */
 body {
-  @apply bg-[#0e0a27] text-white font-sans;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
-/* ====== COMPONENTES PERSONALIZADOS ====== */
-.btn-primary {
-  @apply bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition;
+/* Navbar */
+.navbar {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  color: white;
 }
 
-.card {
-  @apply bg-[#1a1a2e] p-6 rounded-xl shadow-lg hover:scale-105 transition;
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
-/* ====== INPUTS ====== */
-.input {
-  @apply p-3 rounded bg-gray-200 text-black outline-none;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-/* ====== TITULOS ====== */
-.title {
-  @apply text-3xl font-bold text-center mb-10;
+/* HERO (Inicio) */
+.hero {
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero h1 span { color: var(--gold); display: block; }
+
+.btn-gold {
+  background-color: var(--gold);
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* MINI CARDS (Sección Blanca Inicio) */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 60px 15%;
+  text-align: center;
+}
+
+.feature-item i { font-size: 2rem; margin-bottom: 15px; display: block; }
+
+/* PRODUCTOS GRID */
+.products-container {
+  padding: 50px 10%;
+  background-color: #f9f9f9;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.product-img {
+  background: var(--gray-light);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.btn-add {
+  background: var(--dark);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* CONTACTO */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 50px;
+}
+
+.contact-info { flex: 1; }
+.contact-form {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group { margin-bottom: 15px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 40px 5%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  font-size: 0.8rem;
 }
