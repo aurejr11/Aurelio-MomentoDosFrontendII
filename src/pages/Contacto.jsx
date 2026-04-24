@@ -15,13 +15,14 @@ const Contacto = () => {
     mensaje: ""
   });
 
+  //se crea la funcion para manejar los cambios en los campos del formulario, actualizando el estado del formulario con los valores ingresados por el usuario
   const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value
     });
   };
-
+  //se utiliza la funcion handleSubmit para manejar el envio del formulario, evitando el comportamiento por defecto del formulario, guardando los datos en el localStorage y mostrando un mensaje de confirmacion al usuario, ademas se limpia el formulario despues de enviar los datos.
   const handleSubmit = (e) => {
     e.preventDefault();
 
