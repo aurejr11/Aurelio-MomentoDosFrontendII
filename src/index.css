@@ -37,7 +37,7 @@ body {
   text-transform: uppercase;
 }
 
-/* HERO (Inicio) */
+/*Inicio Pagina*/
 .hero {
   background-color: var(--dark);
   color: white;
@@ -57,7 +57,7 @@ body {
   text-transform: uppercase;
 }
 
-/* MINI CARDS (Sección Blanca Inicio) */
+/* Mini Cards (Sección Blanca Inicio) */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,7 +68,7 @@ body {
 
 .feature-item i { font-size: 2rem; margin-bottom: 15px; display: block; }
 
-/* PRODUCTOS GRID */
+/* Productos */
 .products-container {
   padding: 50px 10%;
   background-color: #f9f9f9;
@@ -106,7 +106,7 @@ body {
   font-size: 0.8rem;
 }
 
-/* CONTACTO */
+/*Contacto*/
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
