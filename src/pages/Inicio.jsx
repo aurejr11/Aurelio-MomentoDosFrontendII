@@ -21,12 +21,12 @@ const Inicio = () => (
       <div className="feature-item">
         <span>✨</span>
         <h3>DISEÑO ÚNICO</h3>
-        <p>Piezas exclusivas con estética urbana.</p>
+        <p>Piezas exclusivas con estética urbana y minimalista.</p>
       </div>
       <div className="feature-item">
         <span>✔</span>
         <h3>CALIDAD PREMIUM</h3>
-        <p>Materiales de alta calidad duraderos.</p>
+        <p>Materiales de alta calidad para maxima durabilidad.</p>
       </div>
       <div className="feature-item">
         <span>⚡</span>
