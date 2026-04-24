@@ -74,6 +74,11 @@ body {
   background-color: #f9f9f9;
 }
 
+h5 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -138,4 +143,14 @@ body {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 30px;
   font-size: 0.8rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: yellow;
 }
