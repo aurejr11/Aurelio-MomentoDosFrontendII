@@ -45,7 +45,6 @@ const Contacto = () => {
       <Navbar />
 
 
-      // Se crea la estructura de la pagina de contacto con un formulario y la informacion de contacto de la empresa
       <section className="contact-wrapper">
         <div className="contact-info">
           <h2>CONTACTO</h2>
@@ -89,10 +88,11 @@ const Contacto = () => {
                 onChange={handleChange}
               >
                 <option value="">Selecciona un asunto</option>
-                <option value="pedido">Consulta de pedido</option>
+                <option value="pedido">Consulta General</option>
                 <option value="producto">Información de producto</option>
                 <option value="devolucion">Devoluciones</option>
-                <option value="soporte">Soporte técnico</option>
+                <option value="soporte">Estado de Pedido</option>
+                <option value="soporte">Otros</option>
               </select>
             </div>
 
