@@ -1,6 +1,7 @@
 
 // Footer.jsx
 import { Link } from 'react-router-dom';
+import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -30,11 +31,14 @@ const Footer = () => {
       </div>
 
       <div className="footer-col">
-        <h4>SÍGUENOS</h4>
-        <div style={{ display: 'flex', gap: '15px', fontSize: '1.2rem' }}>
-          <span>🐦</span> <span>📸</span> <span>📘</span>
-        </div>
-      </div>
+  <h4>SÍGUENOS</h4>
+
+  <div style={{ display: 'flex', gap: '15px', fontSize: '1.5rem' }}>
+    <FaTwitter style={{ cursor: 'pointer' }} />
+    <FaInstagram style={{ cursor: 'pointer' }} />
+    <FaFacebook style={{ cursor: 'pointer' }} />
+  </div>
+</div>
       
       <div style={{ gridColumn: '1 / -1', textAlign: 'center', paddingTop: '30px', borderTop: '1px solid #333', marginTop: '20px', fontSize: '0.8rem' }}>
         © 2026 Urban Threads. Todos los derechos reservados.
